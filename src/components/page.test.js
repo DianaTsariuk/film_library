@@ -22,24 +22,15 @@ test('renders movie title', () => {
 });
 
 test('renders SearchBar component', () => {
-    // Визначення мок-функції
     const mockSearchFunction = jest.fn();
-
     render(<SearchBar onSearch={mockSearchFunction} />);
-
-    // Перевірка, що компонент SearchBar був успішно відображений
     const searchBarElement = screen.getByTestId('search-bar');
     expect(searchBarElement).toBeInTheDocument();
 
-    // Перевірка, що інпут для вводу тексту має правильний placeholder
     const inputElement = screen.getByPlaceholderText(/Enter movie name/i);
     expect(inputElement).toBeInTheDocument();
-
-    // Перевірка, що кнопка має правильний текст
     const buttonElement = screen.getByRole('button', { name: /Find/i });
     expect(buttonElement).toBeInTheDocument();
-
-    // Симуляція кліку на кнопку пошуку і перевірка, що мок-функція була викликана
     fireEvent.click(buttonElement);
     expect(mockSearchFunction).toHaveBeenCalled();
 });
