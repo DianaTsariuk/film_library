@@ -36,12 +36,11 @@ function MovieGrid() {
     };
 
     const handleReturn = () => {
-        setMovies(moviesData); // Відновлюємо список всіх фільмів
-        setSearchQuery(''); // Скидаємо значення пошукового запиту
-        setShowAllMovies(true); // Змінюємо значення showAllMovies на true
+        setMovies(moviesData); 
+        setSearchQuery(''); 
+        setShowAllMovies(true); 
     };
 
-    // Перевірка, чи показуються всі фільми або лише результати пошуку
     const displayedMovies = showAllMovies ? movies : moviesData;
     return (
         <div>
