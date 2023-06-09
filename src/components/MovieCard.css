@@ -41,7 +41,6 @@ h1 {
 h1:hover {
     color: rgb(202, 113, 226);
     text-decoration: none;
-    /* Відключення підкреслення при наведенні курсора */
 }
 
 .trailer-link {
