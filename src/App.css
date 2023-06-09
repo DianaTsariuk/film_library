@@ -1,0 +1,14 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-color: #f0dbef;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,91 @@
+.movie-card {
+    border: 1px solid #a60c0c;
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f7eaf8;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+    word-wrap: break-word;
+}
+
+.movie-card:hover {
+    border: 2px solid rgb(236, 225, 225);
+    box-shadow: 0 0 30px rgba(223, 7, 7, 0.8);
+}
+
+.poster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    width: 50%;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.info {
+    width: 50%;
+    word-wrap: break-word;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.1);
+    transition: text-decoration 0.3s ease;
+}
+
+h1:hover {
+    color: rgb(202, 113, 226);
+    text-decoration: none;
+    /* Відключення підкреслення при наведенні курсора */
+}
+
+.trailer-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid rgb(0, 0, 255);
+    background-color: transparent;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.trailer-link:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 0, 89);
+    color: #fff;
+    border-width: 3px;
+    letter-spacing: 1px;
+}
+
+.more-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.more-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid rgb(0, 0, 255);
+    background-color: transparent;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.more-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 0, 89);
+    color: #fff;
+    letter-spacing: 2px;
+    border-width: 3px;
+}
